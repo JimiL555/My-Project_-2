@@ -38,8 +38,8 @@ section {
 }
 
 .work-item img {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
 }
 
 .work-item.highlight img {
