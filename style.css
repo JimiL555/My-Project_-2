@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    background: linear-gradient(to bottom, skyblue 50%, ivory 50%);
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 }
 
 .avatar {
-    width: 100px;
+    width: 200px; /* Increase the size of the avatar image */
     border-radius: 50%;
 }
 
