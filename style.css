@@ -24,6 +24,15 @@ nav li {
     margin: 0 15px;
 }
 
+nav a {
+    color: ivory; /* Set the color of the links to ivory */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 section {
     padding: 50px 20px;
 }
