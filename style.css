@@ -9,6 +9,10 @@ header {
     padding: 20px;
 }
 
+h1 {
+    color: ivory; /* Change the color of the h1 text to ivory */
+}
+
 .avatar {
     width: 200px; /* Increase the size of the avatar image */
     border-radius: 50%;
