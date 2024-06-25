@@ -43,6 +43,11 @@ section {
 
 #about {
     color: ivory; /* Change the color of the text in the About section to ivory */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Add a black outline to the text */
 }
 
 .work-samples {
