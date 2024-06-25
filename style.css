@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
-    background: linear-gradient(top, bottom Grecian #0D5EAF, ivory 50%);
+    background: linear-gradient(#0D5EAF 50%, ivory 50%);
 }
 
 header {
