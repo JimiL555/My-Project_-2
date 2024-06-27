@@ -1,20 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="split top">
-        <div class="centered">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#work">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>Jimi's Portfolio</h1>
             <img src="img_avatar.png" alt="Avatar">
-            <h1>Top Half</h1>
         </div>
-    </div>
-    <div class="split bottom">
-        <div class="centered">
-            <img src="img_avatar.png" alt="Avatar">
-            <h1>Bottom Half</h1>
-        </div>
-    </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a 44 year old Greek American who grew up in the Maryland suburbs of Washington DC. Like many other Greek families, my grandparents and parents thrived as restaurateurs. From my earliest memories, love of family and hard work were engrained as foundational values in me and my siblings. I strive to be loyal, trustworthy, and relish a job well done. Growing up, perhaps because I was the youngest in my family, I was the computer savvy one. In that vein, as a personable (I hope) Full Stack Developer who specializes in JavaScript and back-end development, I'm confident I would make an excellent addition to your team.
+            </p>
+        </section>
+        <section id="work">
+            <h2>My Work</h2>
+            <div class="work-container">
+                <div class="work-item large">
+                    <a href="https://example.com/project1">
+                        <img src="placeholder1.png" alt="Project 1">
+                        <h3>Project 1</h3>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://example.com/project2">
+                        <img src="placeholder2.png" alt="Project 2">
+                        <h3>Project 2</h3>
+                    </a>
+                </div>
+                <div class="work-item">
+                    <a href="https://example.com/project3">
+                        <img src="placeholder3.png" alt="Project 3">
+                        <h3>Project 3</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at <a href="mailto:jimi@example.com">liapis.jsl@gmail.com</a>.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Jimi's Portfolio</p>
+    </footer>
 </body>
 </html>
