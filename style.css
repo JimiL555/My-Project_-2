@@ -6,24 +6,21 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .split {
     height: 50%;
     width: 100%;
-    position: fixed;
-    left: 0;
+    position: relative;
 }
 
 .top {
-    top: 0;
-    background-color: #2196F3; /* Blue color */
+    background-color: #0047AB; /* Grecian blue color */
 }
 
 .bottom {
-    bottom: 0;
     background-color: #FFFFF0; /* Ivory color */
 }
 
