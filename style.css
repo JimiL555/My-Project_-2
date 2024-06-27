@@ -1,78 +1,31 @@
+/* General styles for larger screens */
 body {
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth;
-    background: linear-gradient(#0D5EAF 50%, ivory 50%);
-}
-
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    color: ivory; /* Change the color of the h1 text to ivory */
-}
-
-.avatar {
-    width: 200px; /* Increase the size of the avatar image */
-    border-radius: 50%;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav a {
-    color: ivory; /* Set the color of the links to ivory */
-    text-decoration: none; /* Remove underline from links */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Add underline on hover */
-}
-
-section {
-    padding: 50px 20px;
-}
-
-#about {
-    color: ivory; /* Change the color of the text in the About section to ivory */
-    text-shadow: 
-        -1px -1px 0 #000,  
-         1px -1px 0 #000,
-        -1px  1px 0 #000,
-         1px  1px 0 #000; /* Add a black outline to the text */
-}
-
-.work-samples {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.work-item {
-    margin: 20px;
-}
-
-.work-item img {
-    width: 125px;
-    height: 75px;
-}
-
-.work-item.highlight img {
-    width: 175px;
-    height: 100px;
-}
-
-@media (max-width: 768px) {
-    .work-item img, .work-item.highlight img {
-        width: 100%;
-        height: auto;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .left-half, .right-half {
+    width: 50%;
+    height: 100%;
+  }
+  
+  .left-half {
+    background-color: #f00; /* Red color */
+  }
+  
+  .right-half {
+    background-color: #00f; /* Blue color */
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 600px) {
+    body {
+      flex-direction: column;
     }
-}
+    
+    .left-half, .right-half {
+      width: 100%;
+      height: 50%;
+    }
+  }
