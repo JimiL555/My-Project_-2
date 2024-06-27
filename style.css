@@ -1,32 +1,45 @@
-/* General styles for all screens */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     display: flex;
-    height: 100vh;
-    margin: 0;
-    flex-direction: column;
-  }
-  
-  .left-half, .right-half {
-    width: 100%;
-    height: 50%;
-  }
-  
-  .left-half {
-    background-color: #4CAF50; /* Original left half color */
-  }
-  
-  .right-half {
-    background-color: #2196F3; /* Original right half color */
-  }
-  
-  /* Styles for larger screens */
-  @media (min-width: 600px) {
-    body {
-      flex-direction: row;
-    }
-  
-    .left-half, .right-half {
-      width: 50%;
-      height: 100%;
-    }
-  }
+    justify-content: center;
+    align-items: center;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    top: 0;
+}
+
+.left {
+    left: 0;
+    background-color: ivory;
+}
+
+.right {
+    right: 0;
+    background-color: #2196F3;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.centered img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.centered h1 {
+    font-size: 30px;
+}
