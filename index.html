@@ -3,62 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Portfolio</title>
+    <title>Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="top-half">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">My Work</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="intro">
-                <h1>Jimi's Portfolio</h1>
-                <img src="img_avatar.png" alt="Avatar">
+    <header>
+        <h1>John Doe</h1>
+        <img src="avatar.jpg" alt="John Doe" class="avatar">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Brief bio and skills...</p>
+    </section>
+    <section id="work">
+        <h2>My Work</h2>
+        <div class="work-samples">
+            <div class="work-item highlight">
+                <a href="https://link-to-deployed-app.com" target="_blank">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                </a>
             </div>
-        </header>
-    </div>
-    <div class="bottom-half">
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Hello! I am Jimi, a full-stack developer in training. Welcome to my professional portfolio.</p>
-            </section>
-            <section id="work">
-                <h2>My Work</h2>
-                <div class="work-container">
-                    <div class="work-item large">
-                        <a href="https://example.com/project1">
-                            <img src="placeholder1.png" alt="Project 1">
-                            <h3>Project 1</h3>
-                        </a>
-                    </div>
-                    <div class="work-item">
-                        <a href="https://example.com/project2">
-                            <img src="placeholder2.png" alt="Project 2">
-                            <h3>Project 2</h3>
-                        </a>
-                    </div>
-                    <div class="work-item">
-                        <a href="https://example.com/project3">
-                            <img src="placeholder3.png" alt="Project 3">
-                            <h3>Project 3</h3>
-                        </a>
-                    </div>
-                </div>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>You can reach me at <a href="mailto:jimi@example.com">jimi@example.com</a>.</p>
-            </section>
-        </main>
-    </div>
+            <div class="work-item">
+                <a href="https://link-to-deployed-app.com" target="_blank">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                </a>
+            </div>
+            <!-- More projects -->
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <!-- Contact form -->
+        </form>
+    </section>
     <footer>
-        <p>&copy; 2024 Jimi's Portfolio</p>
+        <p>Contact info and social media links...</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

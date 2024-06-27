@@ -1,69 +1,60 @@
-/* CSS Variables */
-:root {
-    --grecian-blue: #0047AB;
-    --ivory: #FFFFF0;
-}
-
-/* Reset and basic styles */
-html, body {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-/* Body split into top and bottom halves */
 body {
-    display: flex;
-    flex-direction: column;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #1F456E 50%, #FFFFF0 50%);
 }
 
-/* Top half of the page */
-.top-half {
-    background-color: var(--grecian-blue);
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-}
-
-/* Bottom half of the page */
-.bottom-half {
-    background-color: var(--ivory);
-    height: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-/* Header and Navigation */
 header {
-    width: 100%;
-    padding: 1rem;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.avatar {
+    width: 100px;
+    border-radius: 50%;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
 }
 
 nav li {
-    margin: 0 1rem;
+    display: inline;
+    margin: 0 15px;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+section {
+    padding: 50px 20px;
+    background-color: transparent;
 }
 
-/* Intro */
-.intro img {
-    width: 100px;
-    border-radius: 50​⬤
+.work-samples {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work-item {
+    margin: 20px;
+}
+
+.work-item img {
+    width: 200px;
+    height: 150px;
+}
+
+.work-item.highlight img {
+    width: 300px;
+    height: 225px;
+}
+
+@media (max-width: 768px) {
+    .work-item img, .work-item.highlight img {
+        width: 100%;
+        height: auto;
+    }
+}
