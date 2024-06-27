@@ -5,25 +5,26 @@ html, body {
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .split {
-    height: 100%;
-    width: 50%;
+    height: 50%;
+    width: 100%;
     position: fixed;
-    top: 0;
-}
-
-.left {
     left: 0;
-    background-color: ivory;
 }
 
-.right {
-    right: 0;
-    background-color: #2196F3;
+.top {
+    top: 0;
+    background-color: #2196F3; /* Blue color */
+}
+
+.bottom {
+    bottom: 0;
+    background-color: #FFFFF0; /* Ivory color */
 }
 
 .centered {
