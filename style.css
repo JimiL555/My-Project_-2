@@ -1,19 +1,20 @@
 body {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to bottom, #1F456E 50%, #FFFFF0 50%);
+    background: linear-gradient(#0D5EAF 50%, ivory 50%);
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background-color: transparent;
+}
+
+h1 {
+    color: ivory; /* Change the color of the h1 text to ivory */
 }
 
 .avatar {
-    width: 100px;
+    width: 200px; /* Increase the size of the avatar image */
     border-radius: 50%;
 }
 
@@ -27,9 +28,26 @@ nav li {
     margin: 0 15px;
 }
 
+nav a {
+    color: ivory; /* Set the color of the links to ivory */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 section {
     padding: 50px 20px;
-    background-color: transparent;
+}
+
+#about {
+    color: ivory; /* Change the color of the text in the About section to ivory */
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000; /* Add a black outline to the text */
 }
 
 .work-samples {
@@ -43,13 +61,13 @@ section {
 }
 
 .work-item img {
-    width: 200px;
-    height: 150px;
+    width: 125px;
+    height: 75px;
 }
 
 .work-item.highlight img {
-    width: 300px;
-    height: 225px;
+    width: 175px;
+    height: 100px;
 }
 
 @media (max-width: 768px) {
